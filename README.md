@@ -2,7 +2,13 @@
 
 This is a web app that recognizes a [Novation Launchpad MK2](https://downloads.novationmusic.com/novation/launchpad-mk2) MIDI controller (connected to a computer via USB cable), and plays different sound effects when different buttons are pressed.
 
-### Demo (visuals only)
+### Demo
+
+Watch the [demo video on YouTube](https://youtu.be/3VgG6COkYkM):
+
+![](demo_soundboard8x8_video.jpg)
+
+This demo shows visuals only:
 
 ![When the user clicks on buttons in the UI, the app plays sounds.](demo_soundboard8x8.gif)
 
