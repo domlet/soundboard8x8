@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Launchpad MK2 Grid</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <h1>Launchpad MK2 Grid: Sound + LED</h1>
   <p>Status: <span id="status">Click Start to Enable Audio</span></p>
@@ -20,10 +22,41 @@
     <button id="increment">⬆</button>
   </div>
   <div class="grid" id="padGrid"></div>
+
+  <script>
+    /**
+     * Flashes a semi-transparent overlay over the background briefly
+     */
+    function flashOverlay() {
+      const overlay = document.createElement("div");
+      overlay.style.position = "fixed";
+      overlay.style.top = 0;
+      overlay.style.left = 0;
+      overlay.style.width = "100vw";
+      overlay.style.height = "100vh";
+      overlay.style.backgroundColor = "rgba(255, 255, 255, 0.25)";
+      overlay.style.zIndex = 1000;
+      overlay.style.pointerEvents = "none";
+      overlay.style.transition = "opacity 0.2s ease";
+
+      document.body.appendChild(overlay);
+
+      // Trigger fade out
+      requestAnimationFrame(() => {
+        overlay.style.opacity = "0";
+      });
+
+      setTimeout(() => {
+        document.body.removeChild(overlay);
+      }, 300);
+    }
+  </script>
+
   <script src="soundMap.js"></script>
   <script src="gridUI.js"></script>
-  <script src="midiHandlers.js"></script>
   <script src="buttonActions.js"></script>
+  <script src="midiHandlers.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>

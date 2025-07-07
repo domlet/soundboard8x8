@@ -1,10 +1,18 @@
-## My initial ChatGPT prompt:
+## Soundboard (for Novation Launchpad)
 
-> Use JavaScript and HTML to create a program i can use in a web browser that recognizes my novation launchpad MK2 controller and programs 3 unique sounds for the first 3 buttons on the top row.
+This is a web app that recognizes a [Novation Launchpad MK2](https://downloads.novationmusic.com/novation/launchpad-mk2) MIDI controller (connected to a computer via USB cable), and plays different sound effects when different buttons are pressed.
 
-### Get your own sounds
+### Demo (visuals only)
 
-I am using these: [Google Sheet](https://bit.ly/4kkKtHb)
+![When the user clicks on buttons in the UI, the app plays sounds.](demo_soundboard8x8.gif)
+
+### My initial ChatGPT prompt:
+
+> Use JavaScript and HTML to create a program that I can use in a web browser that recognizes my Novation Launchpad MK2 controller, and programs 3 unique sounds for the first 3 buttons on the top row.
+
+### Sound effects
+
+I am using [these sounds](https://bit.ly/4kkKtHb) from [Freesound.org](https://freesound.org/). (If you clone this repo, you will need to provide your own sounds!)
 
 ### Run the app locally
 

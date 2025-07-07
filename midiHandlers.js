@@ -12,7 +12,8 @@ function onMIDISuccess(midiAccess) {
   for (let output of midiAccess.outputs.values()) {
     if (output.name.includes("Launchpad")) {
       midiOutput = output;
-      document.getElementById("status").textContent = "Launchpad connected: " + output.name;
+      document.getElementById("status").textContent =
+        "Launchpad connected: " + output.name;
       lightGrid();
     }
   }
@@ -27,6 +28,7 @@ function handleMIDIMessage(message) {
   if (statusByte === 144 && velocity > 0 && soundMap[note]) {
     soundMap[note].currentTime = 0;
     soundMap[note].play();
+    flashOverlay(); // 🔔 Flash screen
   }
 }
 
@@ -53,7 +55,9 @@ function lightGrid() {
       if (pad) {
         pad.style.backgroundColor = hex;
         pad.classList.add([6, 1].includes(row) ? "black-text" : "white-text");
-        pad.classList.remove([6, 1].includes(row) ? "white-text" : "black-text");
+        pad.classList.remove(
+          [6, 1].includes(row) ? "white-text" : "black-text"
+        );
       }
     }
   });
