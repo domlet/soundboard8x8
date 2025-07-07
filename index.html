@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Launchpad MK2 Grid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Launchpad MK2 Grid: Sound + LED</h1>
+  <p>Status: <span id="status">Click Start to Enable Audio</span></p>
+  <button id="start">Start</button>
+  <button id="reconnect">Reconnect Launchpad</button>
+  <button id="allColors">All Colors</button>
+  <button id="colorIndex">Color Index</button>
+  <br>
+  <div id="velocityControl" style="margin-top: 1em;">
+    <button id="decrement">⬇</button>
+    <input id="velocityValue" type="number" value="0" min="0" max="127" style="width: 60px;">
+    <button id="increment">⬆</button>
+  </div>
+  <div class="grid" id="padGrid"></div>
+  <script src="soundMap.js"></script>
+  <script src="gridUI.js"></script>
+  <script src="midiHandlers.js"></script>
+  <script src="buttonActions.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
