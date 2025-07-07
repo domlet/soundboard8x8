@@ -6,9 +6,9 @@ This is a web app that recognizes a [Novation Launchpad MK2](https://downloads.n
 
 Watch the [demo video on YouTube](https://youtu.be/3VgG6COkYkM):
 
-![](demo_soundboard8x8_video.jpg)
+[![When I push buttons, I hear obnoxious sound effects!](demo_soundboard8x8_video.jpg)](https://youtu.be/3VgG6COkYkM)
 
-This demo shows visuals only:
+Like the [live webpage](https://domlet.github.io/soundboard8x8), this demo shows **visuals only**:
 
 ![When the user clicks on buttons in the UI, the app plays sounds.](demo_soundboard8x8.gif)
 
@@ -18,7 +18,11 @@ This demo shows visuals only:
 
 ### Sound effects
 
-I am using [these sounds](https://bit.ly/4kkKtHb) from [Freesound.org](https://freesound.org/). (If you clone this repo, you will need to provide your own sounds!)
+I am using [these sound effects](https://bit.ly/4kkKtHb).
+
+_If you clone this repo, you will need to **provide your own sounds**!_
+
+You can download free sounds from [Freesound.org](https://freesound.org/).
 
 ### Run the app locally
 
