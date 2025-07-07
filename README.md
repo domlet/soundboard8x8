@@ -32,6 +32,7 @@ I am using [these sounds](https://bit.ly/4kkKtHb) from [Freesound.org](https://f
     This number uniquely identifies which pad was pressed.
     Here is the full Launchpad MK2 MIDI note number layout
     for the 8×8 grid of pads (not including side buttons).
+
     The tens digit represents the row. (1 thru 8)
     The ones digit represents the column. (1 thru 8)
 
