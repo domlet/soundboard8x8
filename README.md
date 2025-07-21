@@ -6,7 +6,7 @@ This is a web app that recognizes a [Novation Launchpad MK2](https://downloads.n
 
 Watch the [demo video on YouTube](https://youtu.be/3VgG6COkYkM):
 
-[![When I push buttons, I hear obnoxious sound effects!](demo_soundboard8x8_video.jpg)](https://youtu.be/3VgG6COkYkM)
+[![When I push buttons, I hear obnoxious sound effects!](assets/img/demo_soundboard8x8_video.jpg)](https://youtu.be/3VgG6COkYkM)
 
 Like the [live webpage](https://domlet.github.io/soundboard8x8), this demo shows **visuals only**:
 

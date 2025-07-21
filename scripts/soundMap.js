@@ -1,7 +1,16 @@
 // soundMap.js
 // Maps Launchpad button note values to corresponding audio files
-
 // I am using these: https://bit.ly/4kkKtHb (Google Sheet)
+/*
+red: 'bump'
+org: ''
+yel: 'crowd sounds'
+gre: 'correct'
+aqu: 'vocalizations'
+blu: 'crickets?'
+mag: 'incorrect'
+whi: ''
+*/
 
 const soundMap = {
   21: new Audio("sounds/magenta/341033__vikuserro__oh-no.wav"), // oh no! by vikuserro -- https://freesound.org/s/341033/ -- License: Attribution 4.0
@@ -29,6 +38,7 @@ const soundMap = {
   ), // 07075 small girl shouting yes yes yes.wav by Robinhood76 -- https://freesound.org/s/426233/ -- License: Attribution NonCommercial 4.0
   57: new Audio("sounds/green/426889__thisusernameis__beep3.wav"), // beep3.wav by thisusernameis -- https://freesound.org/s/426889/ -- License: Creative Commons 0
   58: new Audio("sounds/green/333418__jayfrosting__woo-1-just-guys.wav"), // Woo 1 just guys.wav by jayfrosting -- https://freesound.org/s/333418/ -- License: Creative Commons 0
+  61: new Audio("sounds/yellow/applause_cheer.mp3"), // urla.aif by man -- https://freesound.org/s/16672/ -- License: Attribution 3.0
   81: new Audio("sounds/red/sound1.mp3"), //
   82: new Audio("sounds/red/sound2.mp3"), //
   83: new Audio("sounds/red/sound3.mp3"), //
