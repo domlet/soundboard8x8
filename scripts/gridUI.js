@@ -17,8 +17,7 @@ function createGridUI(rowColors) {
         if (soundMap[note]) {
           soundMap[note].currentTime = 0;
           soundMap[note].play();
-          console.log(soundMap[note]);
-          //console.log(soundMap[note].src);
+          console.log(soundMap[note].src);
           flashOverlay(); // 🔔 Flash screen
         }
       });
